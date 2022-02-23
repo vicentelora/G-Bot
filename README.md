@@ -1,4 +1,4 @@
-# G-Bot
+# G-Bot 🤖
 _________________________________________________________________________________________
 
 ## Description:
@@ -13,11 +13,18 @@ ________________________________________________________________________________
 - Get inspirational Quote.
 _________________________________________________________________________________________
 
+## TODO list:
+
+- [ ] Change from cliet to bot in order to use prefixes
+- [ ] Develop the bot interaction regarding the events info collection.
+- [ ] Feed the bot some useful Data related to Google Tech.
+
+_________________________________________________________________________________________
+
 ## Important Notes:
 
 An external monitoring service such as https://uptimerobot.com/ should be used in order to keep the bot online 24/7.
 _________________________________________________________________________________________
-
 
 ## Requirements
 
