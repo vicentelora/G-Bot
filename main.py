@@ -1,4 +1,6 @@
 import discord
+from discord.ext import tasks
+from helpfoos import cycle
 
 # Related to bot's life
 from KEEPMEALIVE import keep_alive
@@ -12,7 +14,14 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
+  change_status.start()
   print('I\'m Alive')
+
+status = cycle(['Beep','Boop'])
+
+@tasks.loop(seconds=10)
+async def change_status():
+  await client.change_presence(activity=discord.Game(next(status)))
 
 @client.event
 async def on_message(message):
@@ -36,6 +45,5 @@ async def on_message(message):
 
     await message.channel.send(event_message)
 
-
-# keep_alive()
+keep_alive()
 wake_bot(client)
