@@ -15,7 +15,7 @@ ________________________________________________________________________________
 
 ## TODO list:
 
-- [ ] Change from cliet to bot in order to use prefixes
+- [ ] Change from client to bot in order to use prefixes
 - [ ] Develop the bot interaction regarding the events info collection.
 - [ ] Feed the bot some useful Data related to Google Tech.
 
